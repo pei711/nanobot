@@ -57,7 +57,7 @@
         color: #fafafa;
       }
 
-      /* iOS standalone's scroll-edge blur needs a viewport-fixed color surface.
+      /* Work around iOS standalone's scroll-edge blur with a fixed color surface.
          Keep this outside React's root for cold starts and route changes.
          See docs/guides/ios-pwa-status-bar.md for the WebKit sampling contract. */
       .pwa-status-bar-surface { display: none; }
